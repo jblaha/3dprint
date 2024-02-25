@@ -61,8 +61,8 @@ module xray(){
 }//module
 
 //projection(cut=true) rotate([0,90,0])barrel_with_sensor();
-xray() barrel_with_sensor();
-//barrel_with_sensor();
+//xray() barrel_with_sensor();
+barrel_with_sensor();
 //barrel();
 
 //cap3d(outer_radius=overlaping_part_r, height=overlaping_part_with_LED_length, walls_thickness=overlaping_part_r-barrel_inner_r, top_thickness=0);
