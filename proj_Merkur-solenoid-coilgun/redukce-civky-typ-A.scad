@@ -26,6 +26,8 @@ module barrel(length=barrel_halflength+overlaping_part_length) {
 module barrel_with_sensor() {
     
     walls_thickness=overlaping_part_r-barrel_inner_r;
+    walls_thickness2=overlaping_part_r-barrel_outer_r;
+    
     LED_cap_offset =-0.5*(barrel_halflength+1.0*overlaping_part_with_LED_length); //poloviny, protoze vsude je center=true;
     thin_cap_offset =-1.0*(0.5*barrel_halflength+1.0*overlaping_part_with_LED_length+0.5*overlaping_part_length);
     
@@ -45,7 +47,7 @@ module barrel_with_sensor() {
     translate([0,0,thin_cap_offset])
     cap3d(outer_radius=overlaping_part_r*1.0, 
           height=overlaping_part_length, 
-          walls_thickness=(walls_thickness-barrel_fitting_margin), 
+          walls_thickness=(walls_thickness2-barrel_fitting_margin), 
           top_thickness=0);
     }//union
 }//module
@@ -59,8 +61,8 @@ module xray(){
 }//module
 
 //projection(cut=true) rotate([0,90,0])barrel_with_sensor();
-//xray() barrel_with_sensor();
+xray() barrel_with_sensor();
 //barrel_with_sensor();
-barrel();
+//barrel();
 
 //cap3d(outer_radius=overlaping_part_r, height=overlaping_part_with_LED_length, walls_thickness=overlaping_part_r-barrel_inner_r, top_thickness=0);
