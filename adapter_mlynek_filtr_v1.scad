@@ -5,10 +5,10 @@
 $fn = 180;
 
 // ---------- rozmery (mm) ----------
-cup_od   = 71.5;     // vnejsi prumer nadobky = prumer valce mlynku, ktery se zasouva
+cup_od   = 71.2;     // vnejsi prumer nadobky = prumer valce mlynku, ktery se zasouva
 cup_id   = 62.5;   // vnitrni prumer nadobky (otvor pro kavu)
 col_id   = 83;     // filtr - vnitrni prumer limce
-col_od   = 108;     // filtr - vnejsi prumer limce
+col_od   = 105.5;     // filtr - vnejsi prumer limce
 handle_w = 18;     // sirka drzatka filtru
 
 // ---------- tolerance ----------
@@ -16,10 +16,10 @@ fit        = 0.4;  // celkova vule na prumer (u tisku dolad podle tiskarny)
 slot_extra = 2;    // rezerva ve sirce drzatka
 
 // ---------- konstrukce ----------
-skirt_h    = 05;   // vyska sukne na limci
+skirt_h    = 10;   // vyska sukne na limci
 skirt_wall = 3;    // sila steny sukne
 plate_t    = 5;    // sila desky (dosedaci plocha na limec + dno hrdla)
-sock_h     = 25;   // vyska hrdla pro mlynek (vyssi = stabilnejsi)
+sock_h     = 30;   // vyska hrdla pro mlynek (vyssi = stabilnejsi)
 sock_wall  = 3;    // sila steny hrdla
 cone_h     = 6;    // prechod mezi suknou a hrdlem
 hole_d     = cup_id - 5;  // pruchozi otvor pro kavu, orig cup_id + 0.5
